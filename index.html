@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>FutureFlow test</h1>
-    <p>Amount to convert <input type="text" name="amount" value="1"> USD</p> 
+    <p>Amount to convert <input type="number" name="amount" value="1" min="1" onchange="convertAmount(this.value)"> USD</p> 
     <div id="myGrid" style="height: 130px; width: 600px;" class="ag-fresh"></div>
 </body>
 </html>

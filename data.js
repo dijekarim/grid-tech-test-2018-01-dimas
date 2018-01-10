@@ -20,7 +20,7 @@ for(var i = -5; i < 0; i++){
 
 var currencies = ["INR","USD","EUR","GBP"]
 var rowData = []
-// get the data form openexchange API
+// get the data form openexchange API and save it to rowData as object
 currencies.forEach(function (currency){
     var myObj = { currency: currency}
     columnDefs.slice(1).forEach(function (arrItem){
@@ -66,6 +66,10 @@ function getJSON(url, callback) {
       }
     };
     xhr.send();
+};
+
+function convertAmount(amount){
+    console.log(amount);
 };
 
 // wait for the document to be loaded, otherwise ag-Grid will not find the div in the document.
